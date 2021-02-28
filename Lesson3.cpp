@@ -42,10 +42,7 @@ int main (void)
 					{M[2][0], M[2][1], M[2][2]},
 	};
 	int** c[3] = {p[0], p[1], p[2]};
-	int k = c[1][1][1];
-	int *a = &M[0][0][0];
-	std::cout<< k <<std::endl;
-	std::cout<< * (a + 13) <<std::endl;
+	std::cout<< *(*(*(c + 1) + 1) + 1) <<std::endl;
 }
 	return 0;
 
