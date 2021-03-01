@@ -3,7 +3,7 @@
 
 int main (void)
 {
-{//Task1 
+/*{//Task1 
     int a, b, c, d;
 	std::cout << "a = ";
 	std::cin>> a;
@@ -32,7 +32,7 @@ int main (void)
 	std::cout << "d = ";
 	std::cin>> d;
 	std::cout<< "a*(b + (c/d)) = "<<a*(b + (c*1.0)/d)<< std::endl;
-}
+}*/
 {//Task4
 	int M[3][3][3] = {{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}},
 	                   {{10, 11, 12}, {13, 14, 15}, {16, 17, 18}},
@@ -43,6 +43,9 @@ int main (void)
 	};
 	int** c[3] = {p[0], p[1], p[2]};
 	std::cout<< *(*(*(c + 1) + 1) + 1) <<std::endl;
+    std::cout<< (M + 1) <<std::endl;
+	std::cout<< (*(M + 1)) <<std::endl;
+	
 }
 	return 0;
 
